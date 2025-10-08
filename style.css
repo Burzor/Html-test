@@ -1,0 +1,15 @@
+body {
+  background-image: url('https://files.catbox.moe/odwj0x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-title {
+  text-align: center;
+  color: purple;
+  font-size: 150%;
+}
+
+.red-text {
+  color: red;
+}
