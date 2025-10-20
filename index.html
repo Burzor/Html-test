@@ -29,7 +29,9 @@
             background-image: url('https://files.catbox.moe/odwj0x.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
 
         }
 
@@ -111,11 +113,11 @@
             width: 60%;
             padding: 27px 10px;
             border-radius: 20px;
-            animation: slideRight 0.5s ease;
+            animation: slideRightI 0.5s ease;
 
         }
 
-        @keyframes slideRight {
+        @keyframes slideRightI {
             from {
                 opacity: 0;
                 transform: translateX(-100px);
@@ -134,14 +136,14 @@
             width: 60%;
             padding: 20px 10px;
             border-radius: 20px;
-            animation: slideRight 0.5s ease;
+            animation: slideLeftIi 0.5s ease;
 
         }
 
-        @keyframes slideRight {
+        @keyframes slideLeftIi {
             from {
                 opacity: 0;
-                transform: translateX(-100px);
+                transform: translateX(100px);
             }
             to {
                 opacity: 1;
@@ -185,4 +187,4 @@
         </div>
     </div>
 </body>
-</html>
+</html
