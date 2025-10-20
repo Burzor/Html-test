@@ -1,17 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/png" href="https://files.catbox.moe/60tbep.jpg">
-  <title>How I met my Queen 👑🥹💞</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>my achalugo</title>
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/60tbep.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function togglePassword() {
+            const button = document.getElementById('toggle-password');
+            if (button.textContent === '😛') {
+                button.textContent = '😝';
+            } else {
+                button.textContent = '😛';
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-image: url('https://files.catbox.moe/odwj0x.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .container {
+            position: absolute;
+            top: 140px;
+            left: 30px;
+            background-image: url('https://files.catbox.moe/7e9seh.jpg');
+            width: 60%;
+            padding: 20px 10px;
+            border-radius: 20px;
+            animation: slideRight 0.5s ease;
+
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .login-head h1 {
+            font-size: 30px;
+        }
+
+        .login-head p {
+            font-weight: 500;
+        }
+
+        .containerI {
+            position: absolute;
+            top: 267px;
+            left: 140px;
+            background-image: url('https://files.catbox.moe/7e9seh.jpg');
+            width: 60%;
+            padding: 25px;
+            border-radius: 20px;
+            animation: slideLeft 0.5s ease;
+
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .form-group label {
+            text-align: top;
+            font-size: 20px;
+            font-weight: 1000;
+            line-height: auto;
+            margin: 0px;
+        }
+        
+        input[type="text"]::placeholder, input[type="color"] {
+            color: purple;
+            background-color: grey;
+            border-radius: 20px;
+            padding: 15px 10px;
+            border: 2px solid grey;
+            font-size:20px;
+}
+
+        .containerII {
+            position: absolute;
+            top: 400px;
+            left: 30px;
+            background-image: url('https://files.catbox.moe/7e9seh.jpg');
+            width: 60%;
+            padding: 27px 10px;
+            border-radius: 20px;
+            animation: slideRight 0.5s ease;
+
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+          .containerIII {
+            position: absolute;
+            top: 550px;
+            left: 120px;
+            background-image: url('https://files.catbox.moe/7e9seh.jpg');
+            width: 60%;
+            padding: 20px 10px;
+            border-radius: 20px;
+            animation: slideRight 0.5s ease;
+
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    
+    </style>
 </head>
 <body>
-  <h1 class="main-title">꧁ঔৣ☬💋✞My Shayla✞💞☬ঔৣ꧂</h1>
-  <p>how are you</p>
-  <h2><a href="https://api.whatsapp.com/send/?phone=2347069036313&text&type=phone_number&app_absent=0&wame_ctl=1">contact</a></h2>
-  <img src="https://files.catbox.moe/ruw6r1.jpg" width="104" height="142">
-  <p class="red-text">Achalugo 😌💕😘</p>
-  <p>still coding</p>
+    <div class="container">
+        <div class="login-head">
+            <h1>Mama💞 login here</h1>
+            <p>
+                login point
+            </p>
+        </div>
+    </div>
+    <div class="containerI">
+        <form id="logForUsername">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="username Mama💞" required>
+            </div>
+        </form>
+    </div>
+    <div class="containerII">
+        <form id="logForPassword">
+            <div class="form-groupI">
+                <label for="password">Entrance key:</label>
+                <input type="password" id="password" placeholder="now password" required>
+                <button type="button" class="toggle-btn" <button id="toggle-password" onclick="togglePassword()">😛</button>
+            </div>
+        </form>
+    </div>
+    <div class="containerIII">
+        <div class="reset-password">
+            <label for="reset-password">
+                <a href="#">forgot password</a>
+            </label>
+        </div>
+    </div>
 </body>
-</html>
+</html
