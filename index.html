@@ -13,6 +13,7 @@
         }
         body {
             min-height: 100vh;
+            min-height: 100dvh; /* for mobile browsers */
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background-image: url('https://i.postimg.cc/tgWyQ6Gd/IMG-20250917-WA0018.jpg');
             background-repeat: no-repeat;
@@ -34,8 +35,8 @@
             border-radius: 20px;
             padding: 20px 25px;
             width: 320px;
+            max-width: 95vw;
             box-shadow: 0 4px 12px rgba(102, 187, 106, 0.1), 0 2px 4px rgba(0, 0, 0, 0.03);
-            margin-bottom: 0;
         }
         .login-head h1 {
             font-size: 30px;
@@ -140,13 +141,13 @@
                 <p>login point</p>
             </div>
         </div>
-        <form id="logForUsername" class="containerI">
+        <form id="logForUsername" class="containerI" autocomplete="off">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" placeholder="username Mama💞" required>
             </div>
         </form>
-        <form id="logForPassword" class="containerII">
+        <form id="logForPassword" class="containerII" autocomplete="off">
             <div class="form-groupI">
                 <label for="password">Entrance key:</label>
                 <input type="password" id="password" placeholder="now password" required>
