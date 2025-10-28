@@ -5,334 +5,335 @@
     <link rel="icon" type="image/png" href="https://files.catbox.moe/60tbep.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  function togglePassword() {
-    const button = document.getElementById('toggle-password');
-    if (button.textContent === '😛') {
-      button.textContent = '😝';
-    } else {
-      button.textContent = '😛';
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.submit-btn').addEventListener('click', function() {
-      alert("This page is not functional yet");
-    });
-  });
-</script>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0;
-                box-sizing: border-box;
+    <script>
+        function togglePassword() {
+            const button = document.getElementById('toggle-password');
+            if (button.textContent === '😛') {
+                button.textContent = '😝';
+            } else {
+                button.textContent = '😛';
             }
+        }
 
-            html {
-                height: 100%;
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.submit-btn').addEventListener('click', function() {
+                alert("This page is not functional yet");
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-image: url('https://i.postimg.cc/tgWyQ6Gd/IMG-20250917-WA0018.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            position: absolute;
+            top: 180px;
+            left: 30px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            width: 60%;
+            padding: 20px 10px;
+            border-radius: 20px;
+            animation: slideRight 0.5s ease;
+
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
             }
-
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-                background-image: url('https://i.postimg.cc/tgWyQ6Gd/IMG-20250917-WA0018.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-                min-height: 100vh;
-                position: relative;
+            to {
+                opacity: 1;
+                transform: translateX(0);
             }
+        }
+        .login-head h1 {
+            font-size: 30px;
+        }
 
-            .container {
-                position: absolute;
-                top: 140px;
-                left: 30px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                width: 60%;
-                padding: 20px 10px;
-                border-radius: 20px;
-                animation: slideRight 0.5s ease;
+        .login-head p {
+            font-weight: 700;
+            font-size: 20px;
+        }
 
+        .containerI {
+            position: absolute;
+            top: 347px;
+            left: 190px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            width: 50%;
+            padding: 46px 25px;
+            border-radius: 30px;
+            animation: slideLeft 0.5s ease;
+
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
             }
-
-            @keyframes slideRight {
-                from {
-                    opacity: 0;
-                    transform: translateX(-100px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
+            to {
+                opacity: 1;
+                transform: translateX(0);
             }
-            .login-head h1 {
-                font-size: 30px;
+        }
+
+        .form-group label {
+            position: absolute;
+            top: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 0;
+            margin: 0px;
+        }
+
+        input[type="text"], input[type="username"] {
+            position: absolute;
+            bottom: 10px;
+            color: purple;
+            background-color: grey;
+            border-radius: 19px;
+            padding: 9px 10px;
+            border: 8px solid grey;
+            font-size: 19px;
+            width: 80%;
+        }
+
+        .containerII {
+            position: absolute;
+            top: 470px;
+            left: 60px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            width: 50%;
+            padding: 44px 25px;
+            border-radius: 30px;
+            animation: slideRightI 0.5s ease;
+
+        }
+
+        @keyframes slideRightI {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
             }
-
-            .login-head p {
-                font-weight: 500;
+            to {
+                opacity: 1;
+                transform: translateX(0);
             }
+        }
 
-            .containerI {
-                position: absolute;
-                top: 267px;
-                left: 140px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                width: 55%;
-                padding: 42px 25px;
-                border-radius: 30px;
-                animation: slideLeft 0.5s ease;
+        .form-groupI label {
+            position: absolute;
+            top: 17px;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 0;
+            margin: 0px;
+        }
 
+        input[type="id"], input[type="password"] {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            color: purple;
+            background-color: grey;
+            border-radius: 19px;
+            padding: 7px 10px;
+            border: 8px solid grey;
+            font-size: 19px;
+            width: 65%;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            left: 72%;
+            bottom: 12px;
+            background: grey;
+            border-radius: 15px;
+            width: 45px;
+            height: 45px;
+            font-size: 30px;
+
+        }
+
+        .submit-btn {
+            position: absolute;
+            top: 600px;
+            left: 187px;
+            width: 150px;
+            padding: 20px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            color: purple;
+            border: none;
+            border-radius: 18px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 187, 106, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
             }
-
-            @keyframes slideLeft {
-                from {
-                    opacity: 0;
-                    transform: translateX(100px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-
-            .form-group label {
-                position: absolute;
-                top: 17px;
-                font-size: 15px;
-                font-weight: bold;
-                line-height: 0;
-                margin: 0px;
-            }
-
-            input[type="text"], input[type="username"] {
-                position: absolute;
-                bottom: 10px;
-                color: purple;
-                background-color: grey;
-                border-radius: 19px;
-                padding: 7px 10px;
-                border: 8px solid grey;
-                font-size: 15px;
-                width: 80%;
-            }
-
-            .containerII {
-                position: absolute;
-                top: 400px;
-                left: 30px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                width: 55%;
-                padding: 42px 25px;
-                border-radius: 20px;
-                animation: slideRightI 0.5s ease;
-
-            }
-
-            @keyframes slideRightI {
-                from {
-                    opacity: 0;
-                    transform: translateX(-100px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-
-            .form-groupI label {
-                position: absolute;
-                top: 17px;
-                font-size: 15px;
-                font-weight: bold;
-                line-height: 0;
-                margin: 0px;
-            }
-
-            input[type="id"], input[type="password"] {
-                position: absolute;
-                left: 10px;
-                bottom: 10px;
-                color: purple;
-                background-color: grey;
-                border-radius: 19px;
-                padding: 7px 10px;
-                border: 8px solid grey;
-                font-size: 15px;
-                width: 65%;
-            }
-
-            .toggle-btn {
-                position: absolute;
-                left: 77%;
-                bottom: 12px;
-                background: grey;
-                border-radius: 15px;
-                width: 39px;
-                height: 40px;
-                font-size: 30px;
-
-            }
-
-            .submit-btn {
-                position: absolute;
-                top: 518px;
-                left: 137px;
-                width: 150px;
-                padding: 20px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                color: white;
-                border: none;
-                border-radius: 18px;
-                font-size: 20px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 12px rgba(102, 187, 106, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-                animation: slideIn 0.5s ease;
-            }
-
-            @keyframes slideIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(10px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            .submit-btn:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 8px 24px rgba(102, 187, 106, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
-            }
-
-            .submit-btn:active {
+            to {
+                opacity: 1;
                 transform: translateY(0);
-                box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
-
             }
+        }
 
-            .reset-password {
-                position: absolute;
-                top: 800px;
-                left: 63px;
-                width: 170px;
-                padding: 20px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                color: white;
-                border: none;
-                border-radius: 18px;
-                font-size: 14px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 12px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
-                animation: slideLeftI 0.5s ease;
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(102, 187, 106, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
 
+        .submit-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .reset-password {
+            position: absolute;
+            top: 800px;
+            left: 63px;
+            width: 170px;
+            padding: 20px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            color: white;
+            border: none;
+            border-radius: 18px;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+            animation: slideLeftI 0.5s ease;
+
+        }
+
+        @keyframes slideLeftI {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
             }
-
-            @keyframes slideLeftI {
-                from {
-                    opacity: 0;
-                    transform: translateX(100px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
+            to {
+                opacity: 1;
+                transform: translateX(0);
             }
+        }
 
-            .reset-password:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 8px 24px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+        .reset-password:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .reset-password:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .newAcc {
+            position: absolute;
+            top: 800px;
+            left: 270px;
+            width: 170px;
+            padding: 20px;
+            background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
+            color: white;
+            border: none;
+            border-radius: 18px;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(128, 0, 128, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.5s ease;
+
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
             }
-
-            .reset-password:active {
+            to {
+                opacity: 1;
                 transform: translateY(0);
-                box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
             }
+        }
 
+        .newAcc:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
 
-            .newAcc {
-                position: absolute;
-                top: 800px;
-                left: 250px;
-                width: 150px;
-                padding: 20px;
-                background-image: url('https://i.postimg.cc/VNm1w6sf/IMG-20250917-WA0020.jpg');
-                color: white;
-                border: none;
-                border-radius: 18px;
-                font-size: 14px;
-                font-weight: 500;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 12px rgba(128, 0, 128, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-                animation: slideUp 0.5s ease;
+        .newAcc:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
 
-            }
-
-            @keyframes slideUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(100px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            .newAcc:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 8px 24px rgba(128, 0, 128, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
-            }
-
-            .newAcc:active {
-                transform: translateY(0);
-                box-shadow: 0 2px 8px rgba(102, 187, 106, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="login-head">
-                <h1>Mama💞 login here</h1>
-                <p>
-                    login point
-                </p>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-head">
+            <h1>Mama💞 login here</h1>
+            <p>
+                login point
+            </p>
+        </div>
+    </div>
+    <div class="containerI">
+        <form id="logForUsername">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="username Mama💞" required>
             </div>
-        </div>
-        <div class="containerI">
-            <form id="logForUsername">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" placeholder="username Mama💞" required>
-                </div>
-            </form>
-        </div>
-        <div class="containerII">
-            <form id="logForPassword">
-                <div class="form-groupI">
-                    <label for="password">Entrance key:</label>
-                    <input type="password" id="password" placeholder="now password" required>
-                    <button type="button" class="toggle-btn" <button id="toggle-password" onclick="togglePassword()">😛</button>
-                </div>
-            </form>
-        </div>
-        <button type="button" class="submit-btn">Lets chat</button>
-        <div class="reset-password">
-            <label for="reset-password">
-                <a href="#">forgot password</a>
-            </label>
-        </div>
-        <div class="newAcc">
-            <label for="newAcc">
-                <a href="#">Create new account</a>
-            </label>
-        </div>
-    </body>
+        </form>
+    </div>
+    <div class="containerII">
+        <form id="logForPassword">
+            <div class="form-groupI">
+                <label for="password">Entrance key:</label>
+                <input type="password" id="password" placeholder="now password" required>
+                <button type="button" class="toggle-btn" <button id="toggle-password" onclick="togglePassword()">😛</button>
+            </div>
+        </form>
+    </div>
+    <button type="button" class="submit-btn">Lets chat</button>
+    <div class="reset-password">
+        <label for="reset-password">
+            <a href="#">forgot password</a>
+        </label>
+    </div>
+    <div class="newAcc">
+        <label for="newAcc">
+            <a href="#">New account</a>
+        </label>
+    </div>
+</body>
 </html>
